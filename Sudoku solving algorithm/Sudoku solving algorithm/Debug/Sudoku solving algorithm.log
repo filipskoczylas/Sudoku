@@ -1,3 +1,2 @@
-﻿  Sudoku_solve.cpp
-C:\Users\hp\Documents\GitHub\Sudoku\Sudoku solving algorithm\Sudoku solving algorithm\Sudoku_solve.cpp(66): warning C4715: 'Sudoku::Solve': not all control paths return a value
+﻿  Sudoku.cpp
   Sudoku solving algorithm.vcxproj -> C:\Users\hp\Documents\GitHub\Sudoku\Sudoku solving algorithm\Debug\Sudoku solving algorithm.exe

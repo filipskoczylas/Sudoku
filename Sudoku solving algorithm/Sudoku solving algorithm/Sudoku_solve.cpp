@@ -6,9 +6,14 @@ bool Sudoku::Solve(int current_row, int current_column)
 	int i = 1;
 	if (finished)
 		return true;
-	if (current_row == 8 && current_column == 8)
+	while (grid[current_row][current_column] != 0)
 	{
-		std::cout << "tu";
+		if (current_column < 9)current_column++;
+		else
+		{
+			current_column = 0;
+			current_row++;
+		}
 	}
 	if (grid[current_row][current_column] == 0)
 	{
@@ -53,14 +58,5 @@ bool Sudoku::Solve(int current_row, int current_column)
 			for (int k = 0; k < 9; k++)
 				if (grid[j][k] == 0) finished = false;
 		return finished;
-	}
-	else
-	{
-		if (current_column < 9)current_column++;
-		else
-		{
-			current_column = 0;
-			current_row++;
-		}
 	}
 }
