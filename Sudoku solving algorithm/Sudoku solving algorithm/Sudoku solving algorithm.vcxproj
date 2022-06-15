@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Sudoku solving algorithm.cpp" />
     <ClCompile Include="Sudoku.cpp" />
+    <ClCompile Include="Sudoku_solve.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sudoku.h" />

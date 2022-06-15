@@ -8,6 +8,9 @@ Sudoku::Sudoku()
 	for (int i = 0; i < 9; i++)
 		for (int j = 0; j < 9; j++)
 			grid[i][j] = 0;
+	r = 0;
+	c = 0;
+	finished = false;
 }
 
 void Sudoku::Display_grid()
