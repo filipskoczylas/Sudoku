@@ -40,3 +40,22 @@ void Sudoku::Display_grid()
 		}
 	}
 }
+
+bool Sudoku::Can_put(int number, int row, int column)
+{
+	for (int i = 0; i < 9; i++)
+	{
+		if (grid[row][i] == number) return false;
+		if (grid[i][column] == number) return false;
+	}
+	int row_number = (row / 3)*3;
+	int column_number = (column / 3)*3;
+	for (int i = row_number; i < row_number + 3; i++)
+	{
+		for (int j = column_number; j < column_number + 3; j++)
+		{
+			if (grid[i][j] == number)return false;
+		}
+	}
+	return true;
+}

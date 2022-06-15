@@ -8,7 +8,7 @@ public:
 	void Display_grid();
 	bool Solve();
 private: 
-	bool Can_put(int);
+	bool Can_put(int, int, int);
 	int grid[9][9];
 };
 
