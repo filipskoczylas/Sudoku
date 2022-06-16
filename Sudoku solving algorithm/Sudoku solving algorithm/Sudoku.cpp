@@ -1,4 +1,6 @@
 #include "Sudoku.h"
+#include <fstream>
+#include <sstream>
 
 using std::cout;
 using std::endl;
@@ -61,4 +63,23 @@ bool Sudoku::Can_put(int number, int row, int column)
 		}
 	}
 	return true;
+}
+
+void Sudoku::Load(std::string name)
+{
+	std::ifstream load{name};
+	int i=0;
+	if (load)
+	{
+		std::string line;
+		while(std::getline(load, line))
+		{
+			std::stringstream s{ line };
+			for (int j = 0; j < 9; j++)
+			{
+				s >> grid[i][j];
+			}
+			i++;
+		}
+	}
 }
